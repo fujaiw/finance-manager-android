@@ -1,0 +1,27 @@
+# ===== 构建产物：绝不提交 =====
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+build/
+.gradle/
+.cxx/
+.externalNativeBuild/
+captures/
+
+# ===== 本机/IDE 配置：不纳入仓库 =====
+local.properties
+.idea/
+*.iml
+*.hprof
+
+# ===== 签名密钥（如果有）：绝不提交 =====
+*.keystore
+*.jks
+signing.properties
+
+# ===== 系统/编辑器 =====
+.DS_Store
+Thumbs.db
+*.log

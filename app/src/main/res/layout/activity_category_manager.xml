@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/purple_500">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="←"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:background="@null"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/title_category_manager"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textAlignment="center"/>
+
+            <View
+                android:layout_width="48dp"
+                android:layout_height="48dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnExpense"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/expense"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:background="@color/purple_700"/>
+
+            <Button
+                android:id="@+id/btnIncome"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/income"
+                android:textSize="16sp"
+                android:textColor="@color/purple_200"
+                android:background="@null"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/guide_step1"
+        android:textSize="14sp"
+        android:textColor="@color/grey_500"
+        android:padding="12dp"
+        android:background="@color/cardBackground"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@color/cardBackground"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/etCategoryName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/hint_category_name"
+            android:textSize="16sp"
+            android:maxLength="10"/>
+
+        <Button
+            android:id="@+id/btnAddCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/purple_500"
+            android:layout_marginLeft="12dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/category_list"
+        android:textSize="16sp"
+        android:textColor="@color/textPrimary"
+        android:padding="12dp"
+        android:fontFamily="sans-serif-medium"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/cardBackground"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:id="@+id/categoryList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"/>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvSelectedCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/guide_step2"
+        android:textSize="14sp"
+        android:textColor="@color/grey_500"
+        android:padding="12dp"
+        android:background="@color/cardBackground"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@color/cardBackground"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/etKeyword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/hint_keyword"
+            android:textSize="16sp"
+            android:maxLength="20"/>
+
+        <Button
+            android:id="@+id/btnAddKeyword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/purple_500"
+            android:layout_marginLeft="12dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/keyword_list"
+        android:textSize="16sp"
+        android:textColor="@color/textPrimary"
+        android:padding="12dp"
+        android:fontFamily="sans-serif-medium"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/cardBackground"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:id="@+id/keywordList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"/>
+    </ScrollView>
+
+</LinearLayout>

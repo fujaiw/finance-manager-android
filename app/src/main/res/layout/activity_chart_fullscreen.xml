@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:id="@+id/rootLayout">
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/fullscreenLineChart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/fullscreenPieChart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="双击返回"
+        android:textSize="14sp"
+        android:textColor="#999999"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+</FrameLayout>
